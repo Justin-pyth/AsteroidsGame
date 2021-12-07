@@ -4,19 +4,19 @@ ArrayList <Asteroids> ast;
 public void setup(){
   size(500,500);
   background(0);
-  stars = new Star[75];
+  stars = new Star[100];
   space = new Spaceship();
   ast = new ArrayList <Asteroids>();
   for (int j = 0; j < 10; j++){
     ast.add(new Asteroids());
   }
-  for (int i = 0; i <75; i++){
+  for (int i = 0; i <100; i++){
     stars[i] = new Star();
   }
 }
 public void draw() {
   background(0); 
-  for (int l = 0; l < 75; l++){
+  for (int l = 0; l < 100; l++){
     stars[l].show();
   }
   for (int m = 0; m < ast.size(); m++){
@@ -47,4 +47,3 @@ public void draw() {
     }
   }
 }
- 
