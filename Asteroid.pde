@@ -50,7 +50,6 @@ class Asteroids extends Floater{
    return myCenterY;
  }
  
- @Override
  public void show (){  //Draws the floater at the current position               
     fill(0);   
     stroke(255);    
