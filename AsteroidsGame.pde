@@ -19,7 +19,7 @@ public void draw() {
   for (int l = 0; l < 75; l++){
     stars[l].show();
   }
-  for (int m = 0; m < asteroids.size(); m++){
+  for (int m = 0; m < ast.size(); m++){
     ast.get(m).move();
     ast.get(m).show();
     if (dist((float)(ast.get(m).getCenterX()),(float)(ast.get(m).getCenterY()),(float)(space.getCenterX()),(float)(space.getCenterY())) < 20){
